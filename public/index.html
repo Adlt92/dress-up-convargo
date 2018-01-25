@@ -3,35 +3,37 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>CSS/HTML Workshop with Convargo</title>
-    <link href="/style/main.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="menu">
       <div class="menu">
-        <a href="index.html">Convargo</a>
+        <a class="lien" href="index.html">Convargo</a>
       </div>
     </header>
-    <div>
-        <a>Bonjour, Que souhaitez-vous expédiez ?</a>
-        <a>Faites comme 1500 expediteurs qui expedient sur everoad et renseignez les carateriqtique de votre marchandise</a>
-    </div>
+    <div class="contenu">
+      <div>
+          <p>Hello, What would you like to ship ?</p>
+          <p>Do as 1500 that shippers on everoad expedient and complete the carateristique your merchandise</p>
+      </div>
 
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
+      <div id="trucker">
+        <input class="name" type="text" placeholder="Trucker name"/>
+        <input class="price-by-km" type="number" placeholder="Price by km"/>
+        <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+      </div>
 
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
+      <div id="shipper">
+        <input class="name" type="text" placeholder="Shipper name"/>
+        <input class="distance" type="number" placeholder="Distance in km"/>
+        <input class="volume" type="number" placeholder="Volume in m3"/>
+        <input class="option" type="checkbox" placeholder="Deductible option"/>
+      </div>
 
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
+      <button id="compute">Compute</button>
+      <div id="actors"></div>
+      <script src="convargo.js"></script>
+      <script src="index.js"></script>
+    </div>
   </body>
 </html>

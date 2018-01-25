@@ -1,7 +1,48 @@
-.Header {
-    z-index: 1;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #fff;
-    background-color: ##2e3b4c;
+@font-face {
+    font-family: myFont;
+    src: url(Lovelo_Line_Light.otf);
 }
+
+Header {
+  color: #fff;
+  background-color: #2e3b4c;
+  font-family: myFont;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 30px;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  left: 0px;
+  box-shadow: 2px 8px 6px black;
+  text-decoration: none;
+}
+.lien{
+  color: #ffffff;
+  line-height: 50px;
+  list-style: none;
+  text-decoration:none
+}
+.contenu{
+  width: 70%;
+  position: relative;
+  padding: 70px 50px 0px 40px;
+}
+
+input{
+  border-color: #dbe0e7;
+  padding: 6px 0px 6px 0px;
+  min-height: 35px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+button{
+	background-color: #2e3b4c;
+	color: white;
+	border-radius: 3px;
+	width: 180px
+ }
