@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>CSS/HTML Workshop with Convargo</title>
+    <link href="style/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu">
+        <a class="lien" href="index.html">Convargo</a>
+      </div>
+    </header>
+    <div class="contenu">
+      <div>
+          <p>Hello, What would you like to ship ?</p>
+          <p>Do as 1500 that shippers on everoad expedient and complete the carateristique your merchandise</p>
+      </div>
+      <div class="inoutput">
+        <div name="inoutput2">
+          <div id="trucker">
+            <input class="name" type="text" placeholder="Trucker name"/>
+            <input class="price-by-km" type="number" placeholder="Price by km"/>
+            <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+          </div>
+
+          <div id="shipper">
+            <input class="name" type="text" placeholder="Shipper name"/>
+            <input class="distance" type="number" placeholder="Distance in km"/>
+            <input class="volume" type="number" placeholder="Volume in m3"/>
+            <input class="option" type="checkbox" placeholder="Deductible option"/>
+          </div>
+
+          <button name="compute" id="compute">Compute</button>
+
+        </div>
+        <img name="delivery_img" src="resources/delivery_truck.jpg" alt="delivery truck" style="width:200px;height:200px;">
+      </div>
+      <div id="estimate" style="visibility: hidden;" class="inoutput">
+        <h1>Estimation</h1>
+        <div id="actors"></div>
+        <script src="convargo.js"></script>
+        <script src="index.js"></script>
+      </div>
+
+    </div>
+  </body>
+</html>
