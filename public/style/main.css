@@ -1,48 +1,72 @@
 @font-face {
-    font-family: myFont;
+    font-family: lovelo;
     src: url(Lovelo_Line_Light.otf);
 }
 
+@font-face {
+    font-family: Bariol;
+    src: url(Bariol_Regular.otf);
+}
+
+body{
+  padding: 0% 10% 10% 10%;
+}
+
 Header {
-  color: #fff;
+  z-index: 1;
   background-color: #2e3b4c;
-  font-family: myFont;
+  font-family: lovelo;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 30px;
-  height: 40px;
+  font-size: 35px;
+  height: 45px;
   position: fixed;
-  top: 0;
+  top: 0px;
   right: 0px;
   left: 0px;
   box-shadow: 2px 8px 6px black;
-  text-decoration: none;
-}
-.lien{
-  color: #ffffff;
-  line-height: 50px;
-  list-style: none;
-  text-decoration:none
-}
-.contenu{
-  width: 70%;
-  position: relative;
-  padding: 70px 50px 0px 40px;
 }
 
 input{
   border-color: #dbe0e7;
+  outline-offset: 30px;
   padding: 6px 0px 6px 0px;
-  min-height: 35px;
+  min-height: 20px;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
 }
 
-button{
+.lien{
+  color: rgba(251,178,50,1);
+  line-height: 50px;
+  text-decoration:none
+}
+
+.contenu{
+  width: 70%;
+  position: absolute;
+  padding: 70px 50px 0px 40px;
+  font-family: Bariol;
+}
+
+.inoutput{
+  padding: 4%;
+  display: flex;
+  box-shadow: 0px 15px 15px 0px black;
+
+}
+
+#inoutput2{
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#compute{
 	background-color: #2e3b4c;
 	color: white;
-	border-radius: 3px;
-	width: 180px
- }
+	border-radius: 5px;
+	width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
