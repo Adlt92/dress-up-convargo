@@ -2,8 +2,20 @@
 <html lang=fr>
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>CSS/HTML Workshop with Convargo</title>
+    <title>Convargo</title>
     <link href="style/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Website CSS style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Website Font style -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="menu">
@@ -13,36 +25,115 @@
     </header>
     <div class="contenu">
       <div>
-          <p>Hello, What would you like to ship ?</p>
+          <h1>Hello, What would you like to ship ?</h1>
           <p>Do as 1500 that shippers on everoad expedient and complete the carateristique your merchandise</p>
+          <img name="delivery_img" src="resources/delivery_truck.jpg" alt="delivery truck" style="width:200px;height:200px;">
       </div>
       <div class="inoutput">
-        <div name="inoutput2">
-          <div id="trucker">
-            <input class="name" type="text" placeholder="Trucker name"/>
-            <input class="price-by-km" type="number" placeholder="Price by km"/>
-            <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+          <div class="container">
+            <div class="row main">
+              <div class="main-login main-center">
+
+                <h2>Informations</h2>
+                <form class="" method="post" action="#">
+                  <div id="trucker">
+
+                    <div class="form-group">
+                      <label for="truckername" class="cols-sm-2 control-label">Trucker Name</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                          <input type="text" class="form-control"  class="name" name="name" id="truckername"  placeholder="Enter the Trucker name"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="pricekm" class="cols-sm-2 control-label">Price by Km</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <input type="number" class="form-control" class="price-by-km" name="pricekm" id="pricekm"  placeholder="Enter the prce by Km"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Price by m3" class="cols-sm-2 control-label">Price by m3</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <input type="number" class="form-control" name="truckerprice" id="truckerprice"  placeholder="Enter the Price by m3"/>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div id="shipper">
+
+                    <div class="form-group">
+                      <label for="shipername" class="cols-sm-2 control-label">Shiper Name</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                          <input type="text" class="form-control"  name="shipername" id="shiper"  placeholder="Enter the Shiper name"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="shiperdistance" class="cols-sm-2 control-label">Distance in Km</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <input type="number" class="form-control" name="shiperdistance" id="shiperdistance"  placeholder="Enter the diastance in Km"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="shipervomule" class="cols-sm-2 control-label">Volume in m3</label>
+                      <div class="cols-sm-10">
+                        <div class="input-group">
+                          <input type="number" class="form-control" name="shippervolume" id="shipervolume"  placeholder="Enter the volume in m3"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="shiperoption" class="cols-sm-2 control-label">Deductible option</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <input type="checkbox" class="form-control" class="volume" name="name" id="shiperoption"  placeholder="Deductible option"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group ">
+                    <a target="_blank" type="button" name="compute" id="compute" class="btn btn-primary btn-lg btn-block login-button">Compute</a>
+                  </div>
+
+                </form>
+              </div>
+            </div>
           </div>
 
-          <div id="shipper">
-            <input class="name" type="text" placeholder="Shipper name"/>
-            <input class="distance" type="number" placeholder="Distance in km"/>
-            <input class="volume" type="number" placeholder="Volume in m3"/>
-            <input class="option" type="checkbox" placeholder="Deductible option"/>
+
+          <div id="estimate" style="visibility: hidden;">
+            <h2>Estimation</h2>
+            <div id="actors"></div>
+            <script src="convargo.js"></script>
+            <script src="index.js"></script>
           </div>
 
-          <button name="compute" id="compute">Compute</button>
-
-        </div>
-        <img name="delivery_img" src="resources/delivery_truck.jpg" alt="delivery truck" style="width:200px;height:200px;">
-      </div>
-      <div id="estimate" style="visibility: hidden;" class="inoutput">
-        <h1>Estimation</h1>
-        <div id="actors"></div>
-        <script src="convargo.js"></script>
-        <script src="index.js"></script>
-      </div>
 
     </div>
+
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

@@ -24,11 +24,11 @@
   const button = document.querySelector('#compute');
 
   button.addEventListener('click', function onClick () {
-    document.getElementById("estimate").style.visibility = "visible"; 
+    document.getElementById("estimate").style.visibility = "visible";
     const trucker = CONVARGO.getTrucker();
-    const distance = document.querySelector('.distance').value;
-    const volume = document.querySelector('.volume').value;
-    const option = document.querySelector('.option').checked;
+    const distance = document.getElementById('shiperdistance').value;
+    const volume = document.getElementById('shipervolume').value;
+    const option = document.getElementById('shiperoption').checked;
     const actors = CONVARGO.payActors(trucker, distance, volume, option);
 
     render(actors);

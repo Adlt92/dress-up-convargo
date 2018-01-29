@@ -20,7 +20,8 @@ Header {
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 35px;
-  height: 45px;
+  height: 6
+  5px;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -45,17 +46,18 @@ input{
 }
 
 .contenu{
-  width: 70%;
+  width: 80%;
   position: absolute;
-  padding: 70px 50px 0px 40px;
+  padding: 10% 20px 0px 40px;
   font-family: Bariol;
 }
 
 .inoutput{
-  padding: 4%;
+  padding: 5%;
   display: flex;
-  box-shadow: 0px 15px 15px 0px black;
-
+  box-shadow: 2px 15px 15px 10px black;
+  margin-top: 10px;
+  margin-bottom: 45px;
 }
 
 #inoutput2{
